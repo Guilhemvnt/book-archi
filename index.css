@@ -8,6 +8,12 @@ body {
     overflow-x:hidden;
     scroll-behavior: smooth;
 }
+#h2 {
+    color:white;
+}
+#p {
+    color:white;
+}
 #loading {
     width: 100vw;
     height: 100vh;
@@ -37,7 +43,7 @@ header {
     padding:6vh 4vw;
     position:fixed;
     font-weight:bold;
-    background:transparent;
+    background: white;
     color:rgb(0, 0, 0);
     transition:0.4s ease-in-out;
     z-index:2;
@@ -100,7 +106,7 @@ header table {
 }
 #top_part {
     width:100%;
-    border:2vh solid #fff;
+    border: 2vh solid #000;
 }
 #top_part tr td{
     width:50%;
@@ -117,6 +123,7 @@ header table {
 #about h1 {
     font-size:45px;
     word-wrap:break-word;
+    color: white;
 }
 #about table {
     width:70%;
@@ -197,6 +204,7 @@ header table {
     width:92vw;
     padding:6vh 4vw;
     font-weight:bold;
+    color: white;
 }
 #bio h1 {
     padding:5px 0px;
@@ -204,6 +212,7 @@ header table {
     width:8%;
 }
 #contact {
+    color: white;
     width:92vw;
     padding:6vh 4vw;
 }
@@ -214,6 +223,7 @@ header table {
 }
 #contact table {
     width:100%;
+    color: white;
 }
 #contact table tr td {
     width:50%;
@@ -229,21 +239,24 @@ header table {
 }
 #contact form {
     width:100%;
+    color: white;
 }
 #contact form input {
-    width:96%;
-    margin:20px 1%;
-    background:transparent;
-    border:0px;
-    border-bottom:3px solid rgba(3, 3, 3, 0.5);
+    width: 96%;
+    margin: 24px 1%;
+    background: #ffffff00;
+    background: white;
+    border: 0px;
+    border-bottom: 3px solid rgb(255 255 255 / 50%);
     padding:8px 10px;
     font-family: 'Poppins', sans-serif;
-    font-size:18px;
+    font-size: 18px;
     transition:0.4s ease-in-out;
-    color:#000;
+    color: #000;
     font-weight:bold;
 }
 #contact form textarea {
+    background: white;
     width:96%;
     margin:20px 1%;
     padding:8px 10px;
@@ -252,10 +265,9 @@ header table {
     padding:8px 10px;
     font-family: 'Poppins', sans-serif;
     font-size:18px;
-    background:transparent;
-    resize:none;
+    resize: auto;
     transition:0.4s ease-in-out;
-    color:#000;
+    color: #fff;
     font-weight:bold;
 }
 #contact form input:focus {
@@ -276,6 +288,7 @@ header table {
     padding:10vh 0px;
     text-align:center;
     font-weight:bold;
+    color: white;
 }
 #footer a {
     color:rgb(0,0,0);
@@ -292,10 +305,10 @@ button:focus {
     height:5px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0); 
+    background: rgb(255 255 255);
 }
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0,0.8); 
