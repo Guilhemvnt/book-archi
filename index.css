@@ -134,7 +134,7 @@ header table {
     text-align:left;
 }
 .social {
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-size:23px;
     padding:12px 17px;
     border-radius:50%;
@@ -145,28 +145,29 @@ header table {
 }
 .social:hover { 
     cursor: pointer;
-    color:#fff;
-    background:rgb(0,0,0);
+    color:rgb(37, 32, 32);
+    background:rgb(255, 255, 255);
     box-shadow:0px 10px 30px rgba(0, 0, 0, 0.8);
 }
 .btn_one {
     font-size:18px;
     font-family: 'Poppins', sans-serif;
-    color:rgb(0,0,0);
-    background:#fff;
-    border:3px solid rgb(0,0,0);
+    box-shadow:0px 10px 20px rgba(0, 0, 0, 0.8);
+    background:rgb(0, 0, 0);
+    box-shadow:0px 10px 40px rgba(255, 255, 255, 0.8);
+    color:#fff;
     padding:8px 40px;
-    width:35%;
+    width:60%;
     border-radius:80px;
     font-weight:bold;
     margin:2vh 0px;
     transition:0.4s ease-in-out;
 }
 .btn_one:hover {
-    box-shadow:0px 10px 30px rgba(0, 0, 0, 0.8);
+    color:rgb(0, 0, 0);
+    background:rgb(255, 255, 255);
+    box-shadow:0px 10px 40px rgba(78, 78, 78, 0.8);
     cursor:pointer;
-    color:#fff;
-    background:rgb(0,0,0);
 }
 #rightImage {
     width:100%;
@@ -203,6 +204,12 @@ header table {
 #bio {
     width:92vw;
     padding:6vh 4vw;
+    font-weight:bold;
+    color: white;
+}
+#bio_collection {
+    width:92vw;
+    padding:14vh 4vw;
     font-weight:bold;
     color: white;
 }
@@ -267,7 +274,7 @@ header table {
     font-size:18px;
     resize: auto;
     transition:0.4s ease-in-out;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight:bold;
 }
 #contact form input:focus {
@@ -283,6 +290,7 @@ header table {
     top:-25px;
     left:30px;
 }
+
 #footer {
     width:100%;
     padding:10vh 0px;
@@ -291,7 +299,7 @@ header table {
     color: white;
 }
 #footer a {
-    color:rgb(0,0,0);
+    color:rgb(255, 255, 255);
     text-decoration:none;
 }
 ::placeholder {
@@ -355,11 +363,14 @@ button:focus {
     width:60%;
     margin:4vh auto;
     box-shadow:0px 10px 20px rgba(0, 0, 0, 0.8);
-    background:rgb(0,0,0);
+    background:rgb(0, 0, 0);
+    box-shadow:0px 10px 40px rgba(255, 255, 255, 0.8);
     color:#fff;
     }
     .btn_one:hover {
-        box-shadow:0px 10px 40px rgba(0, 0, 0, 0.8);
+        color:rgb(0, 0, 0);
+        background:rgb(255, 255, 255);
+        box-shadow:0px 10px 40px rgba(78, 78, 78, 0.8);
         cursor:pointer;
     }
     #contact table tr td {
@@ -387,7 +398,7 @@ button:focus {
     header {
         width:96vw;
         background:#fff;
-        padding:4vh 2vw;
+        padding:4vh 10vw;
         position:absolute;
     }
     #header table tr td {
