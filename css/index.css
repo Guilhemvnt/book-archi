@@ -224,6 +224,7 @@ header table {
     width:8%;
 }
 #contact {
+    font-size: large;
     color: white;
     width:92vw;
     padding:6vh 4vw;
