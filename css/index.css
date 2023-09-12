@@ -208,9 +208,10 @@ header table {
     color: white;
 }
 #bio_title {
-    font-weight:bold;
+    font-weight: bold;
     color: white;
     text-align: left;
+    font-size: 25px; /* Add this line */
 }
 #bio_collection {
     width:92vw;
