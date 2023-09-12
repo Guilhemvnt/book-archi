@@ -211,7 +211,7 @@ header table {
     font-weight: bold;
     color: white;
     text-align: left;
-    font-size: 25px; /* Add this line */
+    font-size: 25px;
 }
 #bio_collection {
     width:92vw;
