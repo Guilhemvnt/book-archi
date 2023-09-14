@@ -9,13 +9,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <style>
+        body {
+          background-color: black;
+        }
+    </style>
 </head>
-<style>
-    body {
-      background-color: black;
-    }
-  </style>
-<body background-color = "black">
+<body>
     <div id="loading" background="black">
         <div id="spinner"></div>
     </div>
@@ -29,7 +29,7 @@
                 <td id="logo">Virgil Leteurtre</td>
                 <td id="navigation">
                     <a href="#work">work</a>
-                    <a href="#bio">about</a>
+                    <a href="#bio">About me</a>
                     <a href="assets/CV_Virgil_Leteurtre.pdf">CV</a>
                     <a href="#contact">contact</a>
                 </td>
@@ -39,15 +39,15 @@
     <table id="top_part">
         <tr>
             <td id="about" class="animated slideInLeft" style="animation-delay:2s; text-align: center;">
-    <br>
-    <br>
-    <br>
-    <br>            
-    <h1 style="color: white;">Architecture d’Intérieur et de Design</h1>
-    <a href="#work">
-    <button class="btn_one" style="font-size: 100%;">Recherche d'alternance</button><br>
-</a>
-<table>
+                <br>
+                <br>
+                <br>
+                <br>            
+                <h1 style="color: white;">Architecture d’Intérieur et de Design</h1>
+                <a href="#work">
+                    <button class="btn_one" style="font-size: 100%;">Recherche d'alternance</button><br>
+                </a>
+                <table>
                     <tr>
                         <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
                         <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
@@ -56,12 +56,11 @@
                         <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>
                     </tr>
                 </table>
-    <div id="bio_title">
-        <p>
-            J'aime la relation charnelle et psychologique qu’entretiennent les personnes avec l’architecture. Nous vivons dans un monde où l'on est constamment entouré par nos créations, il va de soi que notre environnement intime reflète notre personnalité. Ma vision d'un « Intérieur » est qu'il doit satisfaire et refléter la ou les personnes qui y habitent mais surtout cet intérieur doit évoluer avec ses occupants. Il s'agit de cette relation à l'habitat qu’il me tient à cœur de développer dans mes études et mes projets futurs.
-        </p>
-    </div>
-</td>
+                <div id="bio_title">
+                    <p>
+                        J'aime la relation charnelle et psychologique qu’entretiennent les personnes avec l’architecture. Nous vivons dans un monde où l'on est constamment entouré par nos créations, il va de soi que notre environnement intime reflète notre personnalité. Ma vision d'un « Intérieur » est qu'il doit satisfaire et refléter la ou les personnes qui y habitent mais surtout cet intérieur doit évoluer avec ses occupants. Il s'agit de cette relation à l'habitat qu’il me tient à cœur de développer dans mes études et mes projets futurs.
+                    </p>
+                </div>
             </td>
             <td id="rightImage" class="animated jackInTheBox" style="animation-delay:1.0s;"><image id="rightImage" src="assets/potrait..png"></image></td>
         </tr>
@@ -77,7 +76,7 @@
             </a>
             <a href="html/nano_habitat.html">
                 <img onclick="magnify($(this).attr('src'))" src="assets/nana.png">
-                </a>
+            </a>
             <a href="html/nano_habitat.html">
                 <img onclick="magnify($(this).attr('src'))" src="assets/nana.png">
             </a>
@@ -101,43 +100,13 @@
     </div>
     <div id="contact">
         <h1>contact</h1>
-            <table>
-                <tr>
-                    <td>
-                        <div id="inner_div">
-                            <table id="inner_table">
-                                <tr>
-                                    <td><i class="fas fa-phone"></i> &nbsp; 0783296032</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-at"></i> &nbsp; virgilleteurtre@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-fax"></i> &nbsp; +00000000</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-map-marker-alt"></i>
-                                    <div id="address">
-                                        Rue Loustalot,<br>
-                                        Résidence Loustalot Bat K1,<br>
-                                        Gradignan 33170
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="social"><i class="fab fa-facebook"></i></a>
-                                        <a class="social"><i class="fab fa-twitter"></i></a>
-                                        <a class="social"><i class="fab fa-instagram"></i></a>
-                                        <a class="social"><i class="fab fa-dribbble"></i></a>
-                                        <a class="social"><i class="fab fa-medium"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        <table>
+            <tr>
+                <td>
+                    <div id="inner_div">
+                        <table id="inner_table">
+                            <tr>
+                        </table>
     </div>
     <div id="footer">
         <a href="https://github.com/Guilhemvnt">made by Guilhem Vinet </a>
