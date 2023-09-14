@@ -23,6 +23,15 @@
           display: inline-block; /* This makes the links appear on the same line */
           margin: 0 10px; /* Adjust the margin as needed for spacing */
         }
+
+        /* CSS to fix the header at the top */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure a high z-index to be above other elements */
+        }
     </style>
 </head>
 <body>
@@ -33,7 +42,7 @@
         <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
         <div id="img_here"></div>
     </div>
-    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+    <header id="header" class="animated slideInDown fixed-header" style="animation-delay:1.8s;">
         <table>
             <tr>
                 <td id="logo">Virgil Leteurtre</td>
@@ -98,10 +107,11 @@
     <div id="bio">
         <h1>Recherhce</h1>
         <p>
-           Je suis actuellement étudiant en 3ème année de bachelor d’Architecture d’Intérieur et de Design a l’Institut Supérieur des Arts Appliqués de Bordeaux (LISAA).
+           Je suis actuellement étudiant en 2ème année de bachelor d’Architecture d’Intérieur et de Design a l’Institut Supérieur des Arts Appliqués de Bordeaux (LISAA).
         </p>
         <p>
-            Je suis à la recherche d'alternance pour une durée de 3 ans à partir de octobre 2023.
+            Je suis à la recherche d'alternance pour 2023. Les dates de mon 1er stage sont du 27 février au 3 avril et le deuxième du 19 juin au 27 juillet.<br> 
+            Ces stages pouvant idéalement se poursuivre dans le cadre d'une alternance.
         </p>
     </div>
     <div id="contact">
