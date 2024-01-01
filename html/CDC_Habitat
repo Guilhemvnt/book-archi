@@ -45,8 +45,22 @@
         </div>
         <h1>work</h1>
         <div id="photos">
-            <img onclick="magnify($(this).attr('src'))" src="../assets/Leteurtre Virgil CDC habitat phase finale.pdf">
-        </div>
+            <img onclick="magnify($(this).attr('src'))" src="../assets/1.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/2.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/3.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/4.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/5.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/6.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/7.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/8.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/9.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/10.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/11.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/12.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/13.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/14.png">
+            <img onclick="magnify($(this).attr('src'))" src="../assets/15.png">
+       </div>
     </div>
     <div id="contact">
         <h1>contact</h1>
