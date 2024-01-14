@@ -9,29 +9,29 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
-</head>
-<style>
-    body {
-        background-color: black;
-    }
+    <style>
+        body {
+            background-color: black;
+        }
 
-    /* Ajout du style pour éviter les sauts de ligne dans #bio_collection */
-    #bio_collection h1 {
-        white-space: nowrap;
-    }
-</style>
+        /* Ajout du style pour éviter les sauts de ligne dans #bio_collection */
+        #bio_collection h1 {
+            white-space: nowrap;
+        }
+    </style>
+</head>
 <body>
-    <div id="loading" background="black">
+    <div id="loading" style="background: black;">
         <div id="spinner"></div>
     </div>
-    <div id="magnify" background="black">
+    <div id="magnify" style="background: black;">
         <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
         <div id="img_here"></div>
     </div>
-    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+    <header id="header" class="animated slideInDown" style="animation-delay: 1.8s;">
         <table>
             <tr>
-                <td id="logo" h>CDC Habitat</td>
+                <td id="logo">CDC Habitat</td>
                 <td id="navigation">
                     <a href="../index.html">work</a>
                     <a href="../index.html">about</a>
@@ -44,9 +44,7 @@
     <div id="work">
         <div id="bio_collection">
             <h1>Le Refuge</h1>
-            <p>
-                
-            </p>
+            <p></p>
         </div>
         <h1>work</h1>
         <div id="photos">
@@ -54,7 +52,7 @@
             <img onclick="magnify($(this).attr('src'))" src="../assets/planche finale2.png">
             <img onclick="magnify($(this).attr('src'))" src="../assets/planche finale3.png">
             <img onclick="magnify($(this).attr('src'))" src="../assets/planche finale4.png">            
-        </div>
+       </div>
     </div>
     <div id="contact">
         <h1>contact</h1>
