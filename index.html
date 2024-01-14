@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +12,34 @@
     <link rel="stylesheet" href="css/index.css">
     <style>
         body {
-          background-color: black;
+            background-color: black;
         }
 
         /* CSS to center and align the text */
         #navigation {
-          text-align: center;
+            text-align: center;
         }
 
-        #navigation a {
-          display: inline-block; /* This makes the links appear on the same line */
-          margin: 0 10px; /* Adjust the margin as needed for spacing */
+        .nav-btn {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .nav-btn:hover {
+            background-color: #333;
+        }
+
+        #navigation .nav-btn:not(:last-child) {
+            margin-right: 10px;
         }
     </style>
 </head>
+
 <body>
     <div id="loading" background="black">
         <div id="spinner"></div>
@@ -38,10 +53,10 @@
             <tr>
                 <td id="logo">Virgil Leteurtre</td>
                 <td id="navigation">
-                    <a href="#work">work</a>
-                    <a href="#bio">About me</a>
-                    <a href="assets/CV_Letreurtre Virgil.pdf">CV</a>
-                    <a href="#contact">contact</a>
+                    <button onclick="window.location='#work'" class="nav-btn">work</button>
+                    <button onclick="window.location='#bio'" class="nav-btn">About me</button>
+                    <button onclick="window.location='assets/CV_Letreurtre Virgil.pdf'" class="nav-btn">CV</button>
+                    <button onclick="window.location='#contact'" class="nav-btn">contact</button>
                 </td>
             </tr>
         </table>
@@ -52,11 +67,9 @@
                 <br>
                 <br>
                 <br>
-                <br>            
+                <br>
                 <h1 style="color: white;">Architecture d’Intérieur et de Design</h1>
-                <a href="#work">
-                    <button class="btn_one" style="font-size: 100%;">Recherche d'alternance</button><br>
-                </a>
+                <button class="btn_one" style="font-size: 100%;">Recherche d'alternance</button><br>
                 <table>
                     <tr>
                         <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
@@ -72,39 +85,25 @@
                     </p>
                 </div>
             </td>
-            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:1.0s;"><image id="rightImage" src="assets/potrait..png"></image></td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:1.0s;"><img id="rightImage" src="assets/potrait..png"></td>
         </tr>
     </table>
     <div id="work">
         <h1>work</h1>
         <div id="photos">
-            <a href="html/CDC_Habitat.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/12.png">
-            </a>
-            <a href="html/Château_Beauséjou.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/aceuille 2.png">
-            </a>
-            <a href="html/Maison_Vertical.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/2 salon 1.png">
-            </a>
-            <a href="html/nano_habitat.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/nana.png">
-            </a>
-            <a href="html/Nathuropathie.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/Naturopathie/main.png">
-            </a>
-            <a href="html/art.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/art/CamScanner 12-11-2022 13.02.png">
-                 </a>
-            <a href="html/Concours.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/Rendue 3.png">
-            </a>
+            <a href="html/CDC_Habitat.html"><img onclick="magnify($(this).attr('src'))" src="assets/12.png"></a>
+            <a href="html/Château_Beauséjou.html"><img onclick="magnify($(this).attr('src'))" src="assets/aceuille 2.png"></a>
+            <a href="html/Maison_Vertical.html"><img onclick="magnify($(this).attr('src'))" src="assets/2 salon 1.png"></a>
+            <a href="html/nano_habitat.html"><img onclick="magnify($(this).attr('src'))" src="assets/nana.png"></a>
+            <a href="html/Nathuropathie.html"><img onclick="magnify($(this).attr('src'))" src="assets/Naturopathie/main.png"></a>
+            <a href="html/art.html"><img onclick="magnify($(this).attr('src'))" src="assets/art/CamScanner 12-11-2022 13.02.png"></a>
+            <a href="html/Concours.html"><img onclick="magnify($(this).attr('src'))" src="assets/Rendue 3.png"></a>
         </div>
     </div>
     <div id="bio">
         <h1>Recherche</h1>
         <p>
-           Je suis actuellement étudiant en 3ème année de bachelor d’Architecture d’Intérieur et de Design a l’Institut Supérieur des Arts Appliqués de Bordeaux (LISAA).
+            Je suis actuellement étudiant en 3ème année de bachelor d’Architecture d’Intérieur et de Design a l’Institut Supérieur des Arts Appliqués de Bordeaux (LISAA).
         </p>
         <p>
             Je suis à la recherche d'alternance pour l'année 2024 et 2025.
@@ -128,11 +127,9 @@
                             </tr>
                             <tr>
                                 <td><i class="fas fa-map-marker-alt"></i>
-                                <div id="address">
-                                    Rue Loustalot,<br>
-                                    Résidence Loustalot Bat K1,<br>
-                                    Gradignan 33170
-                                </div>
+                                    <div id="address">
+                                        Rue Loustalot,<br> Résidence Loustalot Bat K1,<br> Gradignan 33170
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -155,4 +152,5 @@
     </div>
     <script src="js/index.js" type="text/javascript"></script>
 </body>
+
 </html>
