@@ -1,53 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Virgil Leteurtre</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQqLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <style>
         body {
-            background-color: black;
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
+          background-color: black;
         }
 
         /* CSS to center and align the text */
         #navigation {
-            text-align: center;
-            margin-top: 15px; /* Adjust the margin-top as needed for spacing */
+          text-align: center;
         }
 
         #navigation a {
-            display: inline-block; /* This makes the links appear on the same line */
-            margin: 0 10px; /* Adjust the margin as needed for spacing */
-            color: white; /* Set the text color to white */
-            text-decoration: none; /* Remove underline from links */
-        }
-
-        .right-align {
-            float: right; /* Align to the right */
-        }
-
-        #top_part {
-            width: 100%; /* Make the table width 100% */
-        }
-
-        #about {
-            width: 50%; /* Make about column 50% width */
-        }
-
-        #rightImage img {
-            width: 100%; /* Make */
+          display: inline-block; /* This makes the links appear on the same line */
+          margin: 0 10px; /* Adjust the margin as needed for spacing */
         }
     </style>
 </head>
-
 <body>
     <div id="loading" background="black">
         <div id="spinner"></div>
@@ -60,10 +37,10 @@
         <table>
             <tr>
                 <td id="logo">Virgil Leteurtre</td>
-                <td id="navigation" class="right-align">
+                <td id="navigation">
                     <a href="#work">work</a>
                     <a href="#bio">About me</a>
-                    <a href="assets/CV_Leteurtre Virgil.pdf">CV</a>
+                    <a href="assets/CV_Letreurtre Virgil.pdf">CV</a>
                     <a href="#contact">contact</a>
                 </td>
             </tr>
@@ -75,7 +52,7 @@
                 <br>
                 <br>
                 <br>
-                <br>
+                <br>            
                 <h1 style="color: white;">Architecture d’Intérieur et de Design</h1>
                 <a href="#work">
                     <button class="btn_one" style="font-size: 100%;">Recherche d'alternance</button><br>
@@ -118,7 +95,7 @@
             </a>
             <a href="html/art.html">
                 <img onclick="magnify($(this).attr('src'))" src="assets/art/CamScanner 12-11-2022 13.02.png">
-            </a>
+                 </a>
             <a href="html/Concours.html">
                 <img onclick="magnify($(this).attr('src'))" src="assets/Rendue 3.png">
             </a>
@@ -127,7 +104,7 @@
     <div id="bio">
         <h1>Recherche</h1>
         <p>
-            Je suis actuellement étudiant en 3ème année de bachelor d’Architecture d’Intérieur et de Design a l’Institut Supérieur des Arts Appliqués de Bordeaux (LISAA).
+           Je suis actuellement étudiant en 3ème année de bachelor d’Architecture d’Intérieur et de Design a l’Institut Supérieur des Arts Appliqués de Bordeaux (LISAA).
         </p>
         <p>
             Je suis à la recherche d'alternance pour l'année 2024 et 2025.
@@ -151,11 +128,11 @@
                             </tr>
                             <tr>
                                 <td><i class="fas fa-map-marker-alt"></i>
-                                    <div id="address">
-                                        Rue Loustalot,<br>
-                                        Résidence Loustalot Bat K1,<br>
-                                        Gradignan 33170
-                                    </div>
+                                <div id="address">
+                                    Rue Loustalot,<br>
+                                    Résidence Loustalot Bat K1,<br>
+                                    Gradignan 33170
+                                </div>
                                 </td>
                             </tr>
                             <tr>
@@ -178,5 +155,4 @@
     </div>
     <script src="js/index.js" type="text/javascript"></script>
 </body>
-
 </html>
