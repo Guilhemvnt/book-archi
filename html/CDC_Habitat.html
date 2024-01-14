@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Virgil Leteurtre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQqHM1XjZZZ8PHJcW/EXR4PJ6PirhZEzwEe6k=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
     <style>
         body {
             background-color: black;
@@ -12,31 +16,9 @@
             margin: 0;
         }
 
-        h1, h2, p {
-            margin: 0;
-        }
-
-        #header {
-            padding: 10px;
-        }
-
-        #work, #contact {
-            padding: 20px;
-        }
-
-        #footer {
-            padding: 10px;
-            text-align: center;
-        }
-
-        table {
-            width: 100%;
-        }
-
-        #photos img {
-            width: 100%;
-            max-width: 400px;
-            margin: 10px;
+        /* Ajout du style pour éviter les sauts de ligne dans #bio_collection */
+        #bio_collection h1 {
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -48,10 +30,10 @@
         <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
         <div id="img_here"></div>
     </div>
-    <header id="header">
+    <header id="header" class="animated slideInDown" style="animation-delay: 1.8s;">
         <table>
             <tr>
-                <td id="logo">CDC Habitat</td>
+                <td id="logo" h>Le Refuge</td>
                 <td id="navigation">
                     <a href="../index.html">work</a>
                     <a href="../index.html">about</a>
@@ -72,7 +54,7 @@
             <img onclick="magnify($(this).attr('src'))" src="../assets/planche finale2.png">
             <img onclick="magnify($(this).attr('src'))" src="../assets/planche finale3.png">
             <img onclick="magnify($(this).attr('src'))" src="../assets/planche finale4.png">            
-        </div>
+       </div>
     </div>
     <div id="contact">
         <h1>contact</h1>
