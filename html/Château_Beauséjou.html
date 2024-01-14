@@ -12,21 +12,26 @@
 </head>
 <style>
     body {
-      background-color: black;
+        background-color: black;
     }
-  </style>
-<body background-color = "black">
-    <div id="loading" background="black">
+
+    /* Ajout du style pour éviter les sauts de ligne dans #bio_collection */
+    #bio_collection h1 {
+        white-space: nowrap;
+    }
+</style>
+<body>
+    <div id="loading" style="background: black;">
         <div id="spinner"></div>
     </div>
-    <div id="magnify" background="black">
+    <div id="magnify" style="background: black;">
         <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
         <div id="img_here"></div>
     </div>
-    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+    <header id="header" class="animated slideInDown" style="animation-delay: 1.8s;">
         <table>
             <tr>
-                <td id="logo" h>Chateaux Beauséjour</td>
+                <td id="logo">Chateaux Beauséjour</td>
                 <td id="navigation">
                     <a href="../index.html">work</a>
                     <a href="../index.html">about</a>
@@ -38,10 +43,8 @@
     </header>
     <div id="work">
         <div id="bio_collection">
-            <h1>Black and Withe</h1>
-            <p>
-                
-            </p>
+            <h1>Black and White</h1>
+            <p></p>
         </div>
         <h1>work</h1>
         <div id="photos">
@@ -57,43 +60,43 @@
     </div>
     <div id="contact">
         <h1>contact</h1>
-            <table>
-                <tr>
-                    <td>
-                        <div id="inner_div">
-                            <table id="inner_table">
-                                <tr>
-                                    <td><i class="fas fa-phone"></i> &nbsp; 0783296032</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-at"></i> &nbsp; virgilleteurtre@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-fax"></i> &nbsp; +00000000</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-map-marker-alt"></i>
+        <table>
+            <tr>
+                <td>
+                    <div id="inner_div">
+                        <table id="inner_table">
+                            <tr>
+                                <td><i class="fas fa-phone"></i> &nbsp; 0783296032</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-at"></i> &nbsp; virgilleteurtre@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-fax"></i> &nbsp; +00000000</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-map-marker-alt"></i>
                                     <div id="address">
                                         Rue Loustalot,<br>
                                         Résidence Loustalot Bat K1,<br>
                                         Gradignan 33170
                                     </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="social"><i class="fab fa-facebook"></i></a>
-                                        <a class="social"><i class="fab fa-twitter"></i></a>
-                                        <a class="social"><i class="fab fa-instagram"></i></a>
-                                        <a class="social"><i class="fab fa-dribbble"></i></a>
-                                        <a class="social"><i class="fab fa-medium"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="social"><i class="fab fa-facebook"></i></a>
+                                    <a class="social"><i class="fab fa-twitter"></i></a>
+                                    <a class="social"><i class="fab fa-instagram"></i></a>
+                                    <a class="social"><i class="fab fa-dribbble"></i></a>
+                                    <a class="social"><i class="fab fa-medium"></i></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div>
     <div id="footer">
         <a href="https://github.com/Guilhemvnt">made by Guilhem Vinet </a>
