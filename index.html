@@ -1,158 +1,178 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Virgil Leteurtre</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQqLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <style>
         body {
-          background-color: black;
+            background-color: black;
         }
 
         /* CSS to center and align the text */
         #navigation {
-          text-align: center;
+            text-align: center;
+            margin-top: 15px; /* Adjust the margin-top as needed for spacing */
         }
 
         #navigation a {
-          display: inline-block; /* This makes the links appear on the same line */
-          margin: 0 10px; /* Adjust the margin as needed for spacing */
+            display: inline-block; /* This makes the links appear on the same line */
+            margin: 0 10px; /* Adjust the margin as needed for spacing */
+            color: white; /* Set the text color to white */
+            text-decoration: none; /* Remove underline from links */
         }
-    </style>
-</head>
-<body>
-    <div id="loading" background="black">
-        <div id="spinner"></div>
-    </div>
-    <div id="magnify" background="black">
-        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
-        <div id="img_here"></div>
-    </div>
-    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
-        <table>
-            <tr>
-                <td id="logo">Virgil Leteurtre</td>
-                <td id="navigation">
-                    <a href="#work">work</a>
-                    <a href="#bio">About me</a>
-                    <a href="assets/CV_Letreurtre Virgil.pdf">CV</a>
-                    <a href="#contact">contact</a>
-                </td>
-            </tr>
-        </table>
-    </header>
-    <table id="top_part">
-        <tr>
-            <td id="about" class="animated slideInLeft" style="animation-delay:2s; text-align: center;">
-                <br>
-                <br>
-                <br>
-                <br>            
-                <h1 style="color: white;">Architecture d’Intérieur et de Design</h1>
-                <a href="#work">
-                    <button class="btn_one" style="font-size: 100%;">Recherche d'alternance</button><br>
-                </a>
-                <table>
-                    <tr>
-                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>
-                    </tr>
-                </table>
-                <div id="bio_title">
-                    <p>
-                        J'aime la relation charnelle et psychologique qu’entretiennent les personnes avec l’architecture. Nous vivons dans un monde où l'on est constamment entouré par nos créations, il va de soi que notre environnement intime reflète notre personnalité. Ma vision d'un « Intérieur » est qu'il doit satisfaire et refléter la ou les personnes qui y habitent mais surtout cet intérieur doit évoluer avec ses occupants. Il s'agit de cette relation à l'habitat qu’il me tient à cœur de développer dans mes études et mes projets futurs.
-                    </p>
-                </div>
-            </td>
-            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:1.0s;"><image id="rightImage" src="assets/potrait..png"></image></td>
-        </tr>
-    </table>
-    <div id="work">
-        <h1>work</h1>
-        <div id="photos">
-            <a href="html/CDC_Habitat.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/12.png">
-            </a>
-            <a href="html/Château_Beauséjou.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/aceuille 2.png">
-            </a>
-            <a href="html/Maison_Vertical.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/2 salon 1.png">
-            </a>
-            <a href="html/nano_habitat.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/nana.png">
-            </a>
-            <a href="html/Nathuropathie.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/Naturopathie/main.png">
-            </a>
-            <a href="html/art.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/art/CamScanner 12-11-2022 13.02.png">
-                 </a>
-            <a href="html/Concours.html">
-                <img onclick="magnify($(this).attr('src'))" src="assets/Rendue 3.png">
-            </a>
+
+        .right-align {
+            float: right; /* Align to the right */
+        }
+
+        #top_part {
+            width: 100%; /* Make the table width 100% */
+        }
+
+        #about {
+            width: 50%; /* Make about column 50% width */
+        }
+
+        #rightImage img {
+            width: 100%; /* Make */
+        </style>
+    </head>
+    <body>
+        <div id="loading" background="black">
+            <div id="spinner"></div>
         </div>
-    </div>
-    <div id="bio">
-        <h1>Recherche</h1>
-        <p>
-           Je suis actuellement étudiant en 3ème année de bachelor d’Architecture d’Intérieur et de Design a l’Institut Supérieur des Arts Appliqués de Bordeaux (LISAA).
-        </p>
-        <p>
-            Je suis à la recherche d'alternance pour l'année 2024 et 2025.
-        </p>
-    </div>
-    <div id="contact">
-        <h1>contact</h1>
-        <table>
+        <div id="magnify" background="black">
+            <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+            <div id="img_here"></div>
+        </div>
+        <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+            <table>
+                <tr>
+                    <td id="logo">Virgil Leteurtre</td>
+                    <td id="navigation" class="right-align">
+                        <a href="#work">work</a>
+                        <a href="#bio">About me</a>
+                        <a href="assets/CV_Leteurtre Virgil.pdf">CV</a>
+                        <a href="#contact">contact</a>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <table id="top_part">
             <tr>
-                <td>
-                    <div id="inner_div">
-                        <table id="inner_table">
-                            <tr>
-                                <td><i class="fas fa-phone"></i> &nbsp; 0783296032</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-at"></i> &nbsp; virgilleteurtre@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-fax"></i> &nbsp; +00000000</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-map-marker-alt"></i>
-                                <div id="address">
-                                    Rue Loustalot,<br>
-                                    Résidence Loustalot Bat K1,<br>
-                                    Gradignan 33170
-                                </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a class="social"><i class="fab fa-facebook"></i></a>
-                                    <a class="social"><i class="fab fa-twitter"></i></a>
-                                    <a class="social"><i class="fab fa-instagram"></i></a>
-                                    <a class="social"><i class="fab fa-dribbble"></i></a>
-                                    <a class="social"><i class="fab fa-medium"></i></a>
-                                </td>
-                            </tr>
-                        </table>
+                <td id="about" class="animated slideInLeft" style="animation-delay:2s; text-align: center;">
+                    <br>
+                    <br>
+                    <br>
+                    <br>            
+                    <h1 style="color: white;">Architecture d’Intérieur et de Design</h1>
+                    <a href="#work">
+                        <button class="btn_one" style="font-size: 100%;">Recherche d'alternance</button><br>
+                    </a>
+                    <table>
+                        <tr>
+                            <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                            <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                            <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                            <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                            <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>
+                        </tr>
+                    </table>
+                    <div id="bio_title">
+                        <p>
+                            J'aime la relation charnelle et psychologique qu’entretiennent les personnes avec l’architecture. Nous vivons dans un monde où l'on est constamment entouré par nos créations, il va de soi que notre environnement intime reflète notre personnalité. Ma vision d'un « Intérieur » est qu'il doit satisfaire et refléter la ou les personnes qui y habitent mais surtout cet intérieur doit évoluer avec ses occupants. Il s'agit de cette relation à l'habitat qu’il me tient à cœur de développer dans mes études et mes projets futurs.
+                        </p>
                     </div>
                 </td>
+                <td id="rightImage" class="animated jackInTheBox" style="animation-delay:1.0s;"><image id="rightImage" src="assets/potrait..png"></image></td>
             </tr>
         </table>
-    </div>
-    <div id="footer">
-        <a href="https://github.com/Guilhemvnt">made by Guilhem Vinet</a>
-    </div>
-    <script src="js/index.js" type="text/javascript"></script>
-</body>
-</html>
+        <div id="work">
+            <h1>work</h1>
+            <div id="photos">
+                <a href="html/CDC_Habitat.html">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/12.png">
+                </a>
+                <a href="html/Château_Beauséjou.html">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/aceuille 2.png">
+                </a>
+                <a href="html/Maison_Vertical.html">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/2 salon 1.png">
+                </a>
+                <a href="html/nano_habitat.html">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/nana.png">
+                </a>
+                <a href="html/Nathuropathie.html">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/Naturopathie/main.png">
+                </a>
+                <a href="html/art.html">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/art/CamScanner 12-11-2022 13.02.png">
+                </a>
+                <a href="html/Concours.html">
+                    <img onclick="magnify($(this).attr('src'))" src="assets/Rendue 3.png">
+                </a>
+            </div>
+        </div>
+        <div id="bio">
+            <h1>Recherche</h1>
+            <p>
+                Je suis actuellement étudiant en 3ème année de bachelor d’Architecture d’Intérieur et de Design a l’Institut Supérieur des Arts Appliqués de Bordeaux (LISAA).
+            </p>
+            <p>
+                Je suis à la recherche d'alternance pour l'année 2024 et 2025.
+            </p>
+        </div>
+        <div id="contact">
+            <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; 0783296032</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; virgilleteurtre@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-fax"></i> &nbsp; +00000000</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                        <div id="address">
+                                            Rue Loustalot,<br>
+                                            Résidence Loustalot Bat K1,<br>
+                                            Gradignan 33170
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social"><i class="fab fa-facebook"></i></a>
+                                        <a class="social"><i class="fab fa-twitter"></i></a>
+                                        <a class="social"><i class="fab fa-instagram"></i></a>
+                                        <a class="social"><i class="fab fa-dribbble"></i></a>
+                                        <a class="social"><i class="fab fa-medium"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="footer">
+            <a href="https://github.com/Guilhemvnt">made by Guilhem Vinet</a>
+        </div>
+        <script src="js/index.js" type="text/javascript"></script>
+    </body>
+
+    </html>
