@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Virgil Leteurtre</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQqLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
     <style>
@@ -17,6 +17,15 @@
         /* Ajout du style pour éviter les sauts de ligne dans #bio_collection */
         #bio_collection h1 {
             white-space: nowrap;
+        }
+
+        /* Ajout du style pour centrer les images */
+        #photos {
+            text-align: center;
+        }
+        
+        #photos img {
+            margin: 10px; /* Espacement entre les images si nécessaire */
         }
     </style>
 </head>
@@ -52,7 +61,7 @@
             <img onclick="magnify($(this).attr('src'))" src="../assets/planche finale2.png">
             <img onclick="magnify($(this).attr('src'))" src="../assets/planche finale3.png">
             <img onclick="magnify($(this).attr('src'))" src="../assets/planche finale4.png">            
-       </div>
+        </div>
     </div>
     <div id="contact">
         <h1>contact</h1>
